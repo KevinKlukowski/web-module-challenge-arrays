@@ -34,7 +34,9 @@ const originalFlavors = [
     "Vanilla",
     "Vanilla Burnt Almond"
 ]
-
+//spread operator example
+// newArray = [...varname] will create a copy of the array
+//newArr = [...var1, ...var2] will create copy of arrays combined
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: Copy the Array! 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 We have an array called originalFlavors with 31 flavors (see above).  In these tasks, we will be reading and writing data to this array.  
 With all of these changes going on, we don't want to lose track of the actual, original 31 flavors.  So we need to copy the original array!
@@ -45,8 +47,9 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-function copy(/*your code here*/){
-    /*your code here*/
+function copy(){
+    let newArray = [...originalFlavors];
+    return newArray;
 }    
 
 
