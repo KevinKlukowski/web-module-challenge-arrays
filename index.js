@@ -139,10 +139,13 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(array, string){
-    array.splice(string);
-    
-}
+function removeFlavorByName(arr, value) {
+    var index = arr.indexOf(value);
+    if (index > -1) {
+      arr.splice(index, 1);
+    }
+    return arr;
+  }
 
 
 
@@ -166,8 +169,8 @@ Use the filterByWord function below to do the following:
 */
 
 function filterByWord(array, string){
-    filteredArray = array.includes("chocolate")
-    
+    filteredArray = array.includes(string);
+    return filteredArray;
 }
 
 
@@ -183,8 +186,8 @@ Use the getAverageWordLength function below to do the following:
     For example: getAverageWordLength(originalFlavors) should return a number between 0 and 3.     
 */
 
-function getAverageWordLength(/*code here*/){
-    /*code here*/
+function getAverageWordLength(array){
+    
 }
 
 
